@@ -1,0 +1,8 @@
+<div>
+    <button (click)="toggle()">Show list</button>
+    <div *ngIf="showUsers">
+        <div *ngFor="let user of usersList">
+            <p>{{user.name}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div >
+  <div *ngIf="happy" class="happysad">
+    <img
+      src="https://news.umanitoba.ca/wp-content/uploads/2015/03/happyball.jpg"
+      alt="Happy"
+    />
+  </div>
+  <div *ngIf="!happy" class="happysad">
+    <img
+      src="https://miro.medium.com/max/640/1*m5ebdqSJXG02eGN_fo-JrA.webp"
+      alt="Sad"
+    />
+  </div>
+  <button (click)="toggle()">Click me</button>
+</div>
