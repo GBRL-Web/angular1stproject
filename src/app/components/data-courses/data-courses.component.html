@@ -1,0 +1,6 @@
+<div *ngFor="let course of courses">
+    <p>{{ course.designation }} {{ course.prix }} $</p>
+</div>
+<div>Total : {{ total }} $</div>
+
+<app-form-courses (onAddArticle)="addCourses($event)"></app-form-courses>
